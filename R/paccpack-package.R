@@ -15,9 +15,6 @@ NULL
 #' @author Mahdis Moghadasi, School of Earth, Environment and Society, McMaster University \email{Mogham3@@mcmaster.ca}
 NULL
 
-
-#' @section Datasets: \pkg{paccpack} includes two different datasets: Characteristics of Iranian's counties,and potential accessibility of Iranian's counties based on population and employment.
-#'
 #' Characteristics of Iranian's counties.
 #'
 #' A dataset containing information about 418 counties in Iran, including
@@ -38,16 +35,16 @@ NULL
 #'   \item{tij_2016}{the shortest travel time between the county i and county j in second- 2016}
 #'   \item{tij_2006}{the shortest travel time between the county i and county j in second- 2006}
 #'   \item{tij_1996}{the shortest travel time between the county i and county j in second- 1996}
-#'   \item{R_2006_2016}{employment growth rate of each county - 2006_2016}
-#'   \item{R_1996_2006}{employment growth rate of each county - 1996_2016}
+#'   \item{R_2016_2006}{employment growth rate of each county - 2006_2016}
+#'   \item{R_2006_1996}{employment growth rate of each county - 1996_2016}
 #' }
 #' @docType data
 #' @description Characteristics of Iranian's counties
-#' @name Characteristics_of_counties
+#' @name characteristics_of_counties
 #' @source statistical Center of Iran (1996, 2006 ,2016) General census of population and housing of Iran (https://www.amar.org.ir) and The Railway Organization and Road Maintenance and Transportation Organazation of Iran (1996, 2006 ,2016)
+"characteristics_of_counties"
 
-
-#' potential accessibility
+#' Potential accessibility
 #' A dataset containing information about potential accessibility of 418 counties in Iran.
 #' @format A data frame with 1254 rows and 6 variables:
 #' Accessibility to transportation network based on population or employment
@@ -62,7 +59,7 @@ NULL
 #' @description potential accessibility of Iranian's counties based on population and employment.
 #' @name potential_accessibility
 #' @source Population and employment Data Source: statistical Center of Iran (1996, 2006 ,2016) General census of population and housing of Iran (https://www.amar.org.ir)
-
+"potential_accessibility"
 
 
 

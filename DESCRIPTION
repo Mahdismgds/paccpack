@@ -1,10 +1,10 @@
 Package: paccpack
-Title: What the Package Does (One Line, Title Case)
+Title: Datasets with Characteristics of Counties and Potential Accessibility in Iran
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Mahdis", "Moghadasi", , "mogham3@mcmaster.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package includes two different datasets: Characteristics of Iranian's counties,and potential accessibility of Iranian's counties based on population and employment.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -16,3 +16,7 @@ Suggests:
     rmarkdown,
     knitr
 VignetteBuilder: knitr
+Imports: 
+    readxl,
+    ggplot2,
+    MASS
