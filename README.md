@@ -19,7 +19,7 @@ if(!require(remotes)){
     install.packages("remotes")
     library(remotes)
     }
-remotes::install_github("Mahdismgds/accpack",
+remotes::install_github("Mahdismgds/paccpack",
                          build_vignettes = TRUE)
 ```
 
@@ -52,20 +52,37 @@ library(sf)
 library(ggplot2)
 library(gridExtra)
 
-accessibility <- read_sf("D:/packages/shp/accessibility.shp")
+#accessibility <- read_sf("D:/packages/shp/accessibility.shp")
+data("accessibility")
 
-acc_2016 <- ggplot() + geom_sf(data = accessibility, aes(fill = acc_p_2016), size = 0.01) + labs(fill = "accessibility to transportation 2016") + 
-   coord_sf(crs = "+proj=merc")
+acc_2016 <- ggplot() + 
+  geom_sf(data = accessibility, 
+          aes(fill = acc_p_2016),
+          size = 0.01) + 
+  labs(fill = "accessibility to transportation 2016") + 
+  coord_sf(crs = "+proj=merc") +
+  scale_fill_fermenter(palette = "OrRd", direction = 1)
 
-acc_2006 <- ggplot() + geom_sf(data = accessibility, aes(fill = acc_p_2006), size = 0.01) + labs(fill = "accessibility to transportation 2006") + 
-   coord_sf(crs = "+proj=merc")
-acc_1996 <- ggplot() + geom_sf(data = accessibility, aes(fill = acc_p_1996), size = 0.01) + labs(fill = "accessibility to transportation 1996") + 
-   coord_sf(crs = "+proj=merc")
+acc_2006 <- ggplot() + 
+  geom_sf(data = accessibility, 
+          aes(fill = acc_p_2006), 
+          size = 0.01) + 
+  labs(fill = "accessibility to transportation 2006") +
+  coord_sf(crs = "+proj=merc") + 
+  scale_fill_fermenter(palette = "OrRd", direction = 1)
+
+acc_1996 <- ggplot() + 
+  geom_sf(data = accessibility, 
+          aes(fill = acc_p_1996), 
+          size = 0.01) + 
+  labs(fill = "accessibility to transportation 1996") +
+  coord_sf(crs = "+proj=merc") + 
+  scale_fill_fermenter(palette = "OrRd", direction = 1)
  
 grid.arrange(acc_1996, acc_2006, acc_2016)
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" height="12" />
 
 ![](images/Picture1.jpg "Potential accessubility during 1996-2016")
 
