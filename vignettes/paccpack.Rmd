@@ -27,9 +27,9 @@ The railway lines and stations and the road network of Iran shapefiles were obta
 library(paccpack)
 library(ggplot2)
 library(MASS)
-```
 library(readxl)
-potential_accessibility <- read_excel("D:/Packages/potential_accessibility.xlsx")
+```
+
 
 
 ### potential accessibility during 1996-2016
@@ -37,7 +37,7 @@ potential_accessibility <- read_excel("D:/Packages/potential_accessibility.xlsx"
 By examining the potential accessibility in terms of population and employment over the period from 1996 to 2016 shows that the value of the two indices has generally increased. Also, with the growth of population/employment and development of road and railway networks in each county and consequently the reduction of the shortest time distance, the potential accessibility in most counties has increased.
 
 
-```{r,  eval=FALSE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
+```{r,  eval=TRUE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
 ggplot(potential_accessibility, aes(x = pacc_p, y = year)) + geom_point(position = "jitter", alpha = 0.5, size = 1) + labs(
     x = "Accessibility based on population",
     y = "Year") 
@@ -52,7 +52,7 @@ ggplot(potential_accessibility, aes(x = pacc_e, y = year)) + geom_point(position
 
 Despite that the values of the two indices have increased in all regions between 1996 and 2016, this increase was higher in the central regions of Iran(Tehran county), due to the more concentration of transportation network. While it was the lowest in most of the counties in the other part of the country.
 
-```{r,  eval=FALSE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
+```{r,  eval=TRUE, message=FALSE}
 ggplot(potential_accessibility, aes(x = pacc_p, colour = factor(year))) +
   geom_density() +
   geom_rug() + labs(
@@ -61,7 +61,7 @@ ggplot(potential_accessibility, aes(x = pacc_p, colour = factor(year))) +
 ```
 
 
-```{r, eval=FALSE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
+```{r, eval=TRUE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
  ggplot(potential_accessibility, aes(x = pacc_e, colour = factor(year))) +
   geom_density() +
   geom_rug() + labs(
@@ -69,11 +69,11 @@ ggplot(potential_accessibility, aes(x = pacc_p, colour = factor(year))) +
     y = "Year") 
 ```
 
-### The relationship between the potential accessibility and population/activity changes during 1996-2016
+### The relationship between the potential accessibility and population/employment changes during 1996-2016
 
 the relationship between accessibility through the transport network and the population/ employment over the period 1996-2016 revealed that the benefits of the improved accessibility have spread to neighboring regions due to the road and railway network development in the Tehran metropolitan region, central, northern coastal, northwestern regions, and parts of the eastern region's neighboring regions. Thus, there is a significant relationship between the population/employment and potential accessibility in these regions. 
 
-```{r, eval=FALSE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
+```{r, eval=TRUE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
 ggplot(potential_accessibility, aes(x = population, y = pacc_p)) +
   scale_x_log10() +
   scale_y_log10() +
@@ -84,7 +84,7 @@ ggplot(potential_accessibility, aes(x = population, y = pacc_p)) +
   facet_grid(.~year)
 ```
 
-```{r, eval=FALSE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
+```{r, eval=TRUE, message=FALSE, echo=FALSE, error=FALSE, warning=FALSE}
 ggplot(potential_accessibility, aes(x = employment, y = pacc_e)) +
   scale_x_log10() +
   scale_y_log10() +
