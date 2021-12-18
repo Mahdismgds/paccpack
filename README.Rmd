@@ -23,7 +23,7 @@ The goal of paccpack is to measure the potential accessibility through the inter
 
 ## Installation
 
-You can install the current version of accpack like so:
+You can install the current version of paccpack like so:
 
 ``` r
 if(!require(remotes)){

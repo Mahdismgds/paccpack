@@ -12,7 +12,7 @@ population and employment at the county scale in Iran from 1996 to 2016.
 
 ## Installation
 
-You can install the current version of accpack like so:
+You can install the current version of paccpack like so:
 
 ``` r
 if(!require(remotes)){
