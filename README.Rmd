@@ -23,10 +23,15 @@ The goal of paccpack is to measure the potential accessibility through the inter
 
 ## Installation
 
-You can install the development version of paccpack like so:
+You can install the current version of accpack like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+if(!require(remotes)){
+    install.packages("remotes")
+    library(remotes)
+    }
+remotes::install_github("Mahdismgds/accpack",
+                         build_vignettes = TRUE)
 ```
 
 ## Example
@@ -68,4 +73,4 @@ grid.arrange(acc_1996, acc_2006, acc_2016)
 
 \*\*Bugs\*\*
 
-Users are encouraged to report bugs here. Go to issues in the menu above, and press new issue to start a new bug report, documentation correction or feature request. You can direct questions to [Mogham3\\\@mcmaster.ca](mailto:Mogham3\@mcmaster.ca){.email}
+Users are encouraged to report bugs here. Go to issues in the menu above, and press new issue to start a new bug report, documentation correction or feature request. You can direct questions to [Mogham3\\\@mcmaster.ca](mailto:Mogham3@mcmaster.ca){.email}

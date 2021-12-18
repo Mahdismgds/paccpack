@@ -12,10 +12,15 @@ population and employment at the county scale in Iran from 1996 to 2016.
 
 ## Installation
 
-You can install the development version of paccpack like so:
+You can install the current version of accpack like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+if(!require(remotes)){
+    install.packages("remotes")
+    library(remotes)
+    }
+remotes::install_github("Mahdismgds/accpack",
+                         build_vignettes = TRUE)
 ```
 
 ## Example
