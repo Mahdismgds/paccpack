@@ -63,3 +63,10 @@ grid.arrange(acc_1996, acc_2006, acc_2016)
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
 ![](images/Picture1.jpg "Potential accessubility during 1996-2016")
+
+\*\*Bugs\*\*
+
+Users are encouraged to report bugs here. Go to issues in the menu
+above, and press new issue to start a new bug report, documentation
+correction or feature request. You can direct questions to
+<a href="mailto:Mogham3@mcmaster.ca" class="email">Mogham3\@mcmaster.ca</a>
