@@ -4,14 +4,14 @@
 \name{paccpack-package}
 \alias{paccpack}
 \alias{paccpack-package}
-\title{paccpack: What the Package Does (One Line, Title Case)}
+\title{paccpack: Datasets with Characteristics of Counties and Potential Accessibility in Iran}
 \description{
-What the package does (one paragraph).
+This package includes two different datasets: Characteristics of Iranian's counties,and potential accessibility of Iranian's counties based on population and employment.
 
 This package is is to measure the accessibility through the intermodal transport network (road and railway) based on the population and employment at the county scale in Iran from 1996 to 2016.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Mahdis Moghadasi \email{mogham3@mcmaster.ca} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
 
 Mahdis Moghadasi, School of Earth, Environment and Society, McMaster University \email{Mogham3@mcmaster.ca}

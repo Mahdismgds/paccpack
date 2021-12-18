@@ -84,7 +84,7 @@ grid.arrange(acc_1996, acc_2006, acc_2016)
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" height="12" />
 
-![](images/Picture1.jpg "Potential accessubility during 1996-2016")
+![](man/figures/Picture1.jpg "Potential accessubility during 1996-2016")
 
 \*\*Bugs\*\*
 

@@ -86,7 +86,7 @@ acc_1996 <- ggplot() +
 grid.arrange(acc_1996, acc_2006, acc_2016)
 ```
 
-![](images/Picture1.jpg "Potential accessubility during 1996-2016")
+![](man/figures/Picture1.jpg "Potential accessubility during 1996-2016")
 
 \*\*Bugs\*\*
 
